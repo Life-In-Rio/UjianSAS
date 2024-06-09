@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bg-green-500 h-10 w-10"></div>
+
+    Konfigurasi Tailwind Menggunakan TailWind CLI Buka kembali Visual Studio
+    Code dan buat folder baru dengan nama TailWind CLI, lalu buka di terminal
+    dengan cara ctrl / cmd + ` atau klik di bagian berikut Setelah terminal
+    terbuka, ketik code npm install -D tailwindcss jika sudah berhasil
+    menginstal Tailwind sebagai dependensi pengembangan. Selanjutnya adalah
+    menginisialisasi konfigurasi Tailwind didalam device dengan cara ketik code
+    npx tailwind init Lalu tambahkan di dalam content kode berikut content:
+    ["./public/**/*.{html,js}"], pernyataan content: ["./public/**/*.{html,js}"]
+    dalam konfigurasi Tailwind berarti bahwa Tailwind akan mencari dan mengolah
+    semua file dengan ekstensi HTML atau JS yang ada di dalam folder public dan
+    sub-direktori-nya. Ini adalah cara untuk memberitahu Tailwind tentang file
+    apa yang harus diperhatikan dan digunakan untuk membuat gaya sesuai dengan
+    aturan yang telah diatur. buat folder dengan nama public,lalu pindahkan
+    .html kedalam folder public Lalu buatlah folder baru dengan nama src, dan
+    buat file dengan nama input.css, lalu tambahkan kode berikut buka kembali
+    terminal, lalu ketik perintah berikut npx tailwind -i ./src/input.css -o
+    ./public/style.css --watch berarti Tailwind akan memproses file input.css
+    dari folder src dan menyimpan hasilnya sebagai style.css di dalam folder
+    public. perintah --watch memastikan Tailwind terus memantau perubahan,
+    sehingga dapat secara otomatis memperbarui style.css jika ada perubahan pada
+    file input.css Tailwind sudah bisa di gunakan di HTML, dengan menambahkan
+    code berikut: eksplorasi lebih lanjut klik berikut
+    https://tailwindcss.com/docs/installation Bagian 3 - Tips Menggunakan
+    Tailwind Menjalankan TailWind Menggunakan NPM Buka terminal lalu ketik npm
+    init -y , file package.json akan terbuat otomatis package.json berisi modul
+    modul yang akan di install di Tailwind, lalu tambahkan kode berikut setelah
+    test, jangan lupa diberi koma sebagai pembatas
+
+    <p class="font-bold">janagn lupa kasi koma yaaaaa</p>
+    <p class="font-bold">
+      "build": "npx Tailwind -i ./src/input.css -o ./public/style.css --watch"
+    </p>
+
+    kode berikut sebagai perwakilan untuk menjalankan TailWind di terminal dan
+    bisa menggunakan perintah npm run build
+  </body>
+</html>
